@@ -1,0 +1,94 @@
+.contentContainer{
+max-width:1400px;
+margin:0 auto;
+padding:0 2rem;
+height:calc(100vh - 5rem);
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+
+.myAvatar{
+   &:hover{
+    cursor:pointer;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+    will-change: transform;
+}
+}
+}
+
+.hero{
+   max-width:660px;
+
+   > span{
+      font-size:1.5rem;
+      font-weight:bold; 
+   }
+
+   h1{
+       font-size: 2.5rem;
+       line-height:4.5rem;
+       font-weight:900;
+       margin-top: 2.5rem;
+
+       span{
+           color: var(--cyan-500);
+       }
+   }
+
+   p{
+       font-size: 1.5rem;
+       line-height: 2.25rem;
+       margin-top: 1.5rem;
+
+       span{
+           color: var(--cyan-500);
+           font-weight:bold;
+       }
+   }
+
+   button{
+       margin-top: 2.5rem;
+   }
+
+   .buttons{
+    display: flex;
+    align-items: center;
+    margin-top:10px;
+    
+
+    button{
+        margin: 0 4px;
+    }
+}
+}
+
+   @keyframes upDown{
+      0%{
+     transform: translateY(-4px); 
+      }
+     100%{
+      transform: translateY(2px);
+     }
+    }
+
+    @mixin upDown{
+        animation: upDown 1.5s ease-in-out both infinite;
+    }
+
+.arrowScrollDown{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(100vh - 2rem);
+    padding:6px 0;
+
+    svg{
+  @include upDown();
+    }
+}
+
+
