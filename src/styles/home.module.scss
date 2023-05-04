@@ -1,12 +1,14 @@
 .contentContainer{
 max-width:1400px;
-margin:0 auto;
 padding:0 2rem;
 height:calc(100vh - 5rem);
+position: relative;
+margin: 0 auto;
 
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: center;
+gap: 80px;
 
 
 .myAvatar{
@@ -35,6 +37,10 @@ justify-content: space-between;
        span{
            color: var(--cyan-500);
        }
+       .span{
+        color: var(--cyan-500);
+        font-size:8rem;
+       }
    }
 
    p{
@@ -56,11 +62,12 @@ justify-content: space-between;
     display: flex;
     align-items: center;
     margin-top:10px;
-    
-
-    button{
+    a{
         margin: 0 4px;
+        color: var(--yellow-500);
     }
+
+   
 }
 }
 
