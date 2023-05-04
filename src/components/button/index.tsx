@@ -1,17 +1,18 @@
-import { FaGithub } from "react-icons/fa";
 import styles from "./styles.module.scss";
+import React,{ ElementType } from "react";
 
 interface ButtonProps{
     text: string,
-    color?:string,
+    icon: ElementType;
+    link: string; 
 }
 
-const Button = ({text}:ButtonProps) :JSX.Element => {
+const Button = ({text, icon, link}:ButtonProps) :JSX.Element => {
   return (
-    <button type="button" className={styles.btn}>
-      <FaGithub color="#eba417" />
+    <a href={link} type="button" className={styles.btn}>
+      {React.createElement(icon,{color:""})}
       {text}
-    </button>
+    </a>
   );
 }
 
