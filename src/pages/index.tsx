@@ -19,7 +19,7 @@ const Home: NextPage = () => {
                   <h1>
                     <span className={styles.span}>Hello!</span>
                     <br/> 
-                      I'm Juliana Soba.<br />
+                      I&apos;m Juliana Soba.<br />
                      a Software <span >Developer</span> 
                   </h1>
                   <p>
