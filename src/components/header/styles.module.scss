@@ -204,3 +204,16 @@
       }
     }
 }
+
+
+@media (max-width: 1366px) {
+    .headerContent {
+        height: 4rem;
+        padding: 2rem 1rem;
+    
+        ul {
+            display: none;
+          }
+        }
+    
+}
