@@ -1,12 +1,16 @@
+import styles from "./styles.module.scss";
+
 const About = (): JSX.Element => {
   return (
-    <div>
+    <div className={styles.about} id="about">
+      <div className={styles.info}>
       <h1>About Me</h1>
       <p>
         Here you will find more information about me, what I do, and my current
-        skills mostly in terms of programming and technology
+        skills mostly in terms of programming and <span>technology</span> 
       </p>
-      <div className="content">
+      </div>
+      <div className={styles.content}>
         <div className="left">
           <h2>Who Am I?</h2>
           <p>

@@ -14,12 +14,12 @@ const Header: NextComponentType = () => {
           <span className={styles.span}></span>Juliana Soba
         </h1>
         <ul>
-          <li className={styles.active}>Home</li>
-          <li>About</li>
-          <li>Experience</li>
-          <li>Projects</li>
-          <li>Funny</li>
-          <li>Blog</li>
+          <a className={styles.active}>Home</a>
+          <a href="#about">About</a>
+          <a>Experience</a>
+          <a>Projects</a>
+          <a>Funny</a>
+          <a>Blog</a>
         </ul>
         <div className={styles.iconsgroup}>
         <div

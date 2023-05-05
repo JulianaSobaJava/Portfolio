@@ -38,6 +38,7 @@ $breakpoints:(
    body,html{
   background:var(--gray-900);
    color: var(--white);
+   scroll-behavior: smooth;
 }
 body, input, textarea, select, button{
     font:  400 1rem "Roboto", sans-serif;
