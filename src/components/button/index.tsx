@@ -9,7 +9,7 @@ interface ButtonProps{
 
 const Button = ({text, icon, link}:ButtonProps) :JSX.Element => {
   return (
-    <a href={link} type="button" className={styles.btn}>
+    <a href={link} type="button" className={styles.btn} target="_blank">
       {React.createElement(icon,{color:""})}
       {text}
     </a>

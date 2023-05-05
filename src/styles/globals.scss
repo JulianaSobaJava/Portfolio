@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+$breakpoints:(
+    "phone": 360px,
+    "tablet": 768px,
+    "desktop": 1366px,
+    "LGdesktop": 1920px,
+) !default;
+
 :root{
   --white:#ffffff;
   --gray-100:#e1e1e6;
@@ -14,6 +21,8 @@
   --cyan-500:#61dafb;
   --yellow-500:#eba417;
 }
+
+
 
 @media (max-width: 720px) {
     html {

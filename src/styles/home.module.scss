@@ -99,3 +99,94 @@ gap: 80px;
 }
 
 
+@media (max-width: 360px) {
+
+    .contentContainer{
+        padding:0 2rem;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+
+        .hero{
+            max-width:360px;
+            margin-top: 2rem;
+         
+            > span{
+               font-size:1.5rem;
+               font-weight:bold; 
+            }
+         
+            h1{
+                font-size: 1.8rem;
+                line-height:2.5rem;
+                margin-top: 1.5rem;
+         
+                span{
+                    color: var(--cyan-500);
+                }
+                .span{
+                 color: var(--cyan-500);
+                 font-size:5rem;
+                }
+            }
+        
+     
+         }
+        .myAvatar{
+            width: 300px;
+            height: 300px;
+            margin-top: 3rem;
+        }
+    }
+        
+    
+}
+
+@media (max-width: 480px) {
+
+    .contentContainer{
+        padding:0 2rem;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+
+        .hero{
+            max-width:360px;
+            margin-top: 2rem;
+         
+            > span{
+               font-size:1.5rem;
+               font-weight:bold; 
+            }
+         
+            h1{
+                font-size: 1.8rem;
+                line-height:1.8rem;
+                margin-top: .4rem;
+         
+                span{
+                    color: var(--cyan-500);
+                }
+                .span{
+                 color: var(--cyan-500);
+                 font-size:4rem;
+                }
+            }
+        
+     
+         }
+        .myAvatar{
+            width: 300px;
+            height: 300px;
+            margin-top: 4rem;
+        }
+    }
+        
+    
+}
